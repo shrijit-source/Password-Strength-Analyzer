@@ -1,1 +1,1 @@
-# Password-Strength-Analyzer
+Password Strength Analyzer: Developed a responsive web application using HTML, CSS, and JavaScript that evaluates password strength based on length, character diversity, and common security patterns, while providing real-time feedback and improvement suggestions.
