@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">🔐</div>
+            <h1>Password Strength Analyzer</h1>
+            <p>Check how strong your password is</p>
+        </div>
+
+        <div class="card">
+
+            <label for="password">Enter Your Password</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password..."
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+
+                <button id="togglePassword" type="button">
+                    👁️
+                </button>
+            </div>
+
+            <div class="strength-header">
+                <span>Password Strength</span>
+                <span id="strengthText">No password</span>
+            </div>
+
+            <div class="strength-bar">
+                <div id="strengthProgress"></div>
+            </div>
+
+            <div class="score">
+                Score: <span id="score">0</span>/100
+            </div>
+
+            <div class="requirements">
+
+                <h3>Password Requirements</h3>
+
+                <div class="requirement" id="length">
+                    <span class="icon">✖</span>
+                    At least 8 characters
+                </div>
+
+                <div class="requirement" id="uppercase">
+                    <span class="icon">✖</span>
+                    At least one uppercase letter
+                </div>
+
+                <div class="requirement" id="lowercase">
+                    <span class="icon">✖</span>
+                    At least one lowercase letter
+                </div>
+
+                <div class="requirement" id="number">
+                    <span class="icon">✖</span>
+                    At least one number
+                </div>
+
+                <div class="requirement" id="special">
+                    <span class="icon">✖</span>
+                    At least one special character
+                </div>
+
+            </div>
+
+            <div class="suggestions">
+
+                <h3>💡 Security Suggestions</h3>
+
+                <ul id="suggestionsList">
+                    <li>Enter a password to receive suggestions.</li>
+                </ul>
+
+            </div>
+
+            <button id="clearButton" class="clear-btn">
+                Clear Password
+            </button>
+
+        </div>
+
+        <footer>
+            <p>🔒 Your password is analyzed locally in your browser.</p>
+            <p>Never share your real password with anyone.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
